@@ -26,6 +26,7 @@ null geodesics from each camera pixel back to the celestial sphere
   identical camera, trajectory and background, to isolate the effect of the
   metric.
 
+A set of videos (`einstein_ring_bh.mp4`, `einstein_ring_flat.mp4`) is provided as an example.
 The integration is validated against the analytical shadow size
 `sin α_shadow = (3√3 M / r_obs) √(1 - 2M/r_obs)`, with relative agreement
 better than 1 % in our reference configurations.
@@ -71,6 +72,9 @@ On the **first run**, the script computes the pixel → sky map and stores it
 under `cache/skymap_robs50M_theta90deg_N400_fov30deg.npz`. This step can take some time. 
 On subsequent runs the cache is reloaded.
 
+> See `einstein_ring_bh.mp4` for an
+> example of the expected output.
+
 ### File structure
 
 | File | Role |
@@ -102,6 +106,8 @@ nulles depuis chaque pixel de la caméra jusqu'à la sphère céleste
   caméra, trajectoire et fond identiques, pour isoler l'effet de la
   métrique.
 
+Deux vidéos (`einstein_ring_bh.mp4`, `einstein_ring_flat.mp4`) sont fournies
+en guise d'exemple.
 L'intégration est validée contre la taille angulaire analytique de l'ombre
 `sin α_shadow = (3√3 M / r_obs) √(1 - 2M/r_obs)`, avec un accord relatif
 meilleur que 1 % dans les configurations de référence.
@@ -147,6 +153,9 @@ pour chaque trajectoire configurée, avec `r_obs = 50 M`, FOV = 30°, N = 400.
 Lors du **premier lancement**, le script calcule la carte pixel → ciel et la
 sauve sous `cache/skymap_robs50M_theta90deg_N400_fov30deg.npz`. Cette étape
 peut prendre du temps. Les exécutions suivantes rechargent le cache.
+
+> Voir `einstein_ring_bh.mp4` pour un exemple 
+> de la sortie attendue.
 
 ### Structure des fichiers
 
